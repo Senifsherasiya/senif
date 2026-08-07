@@ -5,7 +5,7 @@ const projectList = [
         title: "FullStack Thread Clone",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reprehenderit tempore facilis corrupti perferendis distinctio dolores error placeat ipsa! Iste",
         techStack: ["HTML", "CSS", "JavaScript", "php"],
-        image: "img/projects.png",
+        image: "projects.png",
         liveLink: "#",
         githubLink: "#",
     },
@@ -15,7 +15,7 @@ const projectList = [
         title: "PHP",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reprehenderit tempore facilis corrupti perferendis distinctio dolores error placeat ipsa! Iste",
         techStack: ["HTML", "CSS", "JavaScript", "php"],
-        image: "img/projects.png",
+        image: "projects.png",
         liveLink: "#",
         githubLink: "#",
     }
