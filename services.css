@@ -1,0 +1,135 @@
+.services{
+    min-height: 100vh;
+    padding: 30px 8% 80px;
+}
+
+.services h2{
+    text-align: center;
+    font-size: 3.8rem;
+    color: var(--white);
+    margin-bottom: 4rem;
+}
+
+.services h2 span{
+    color: var(--green);
+}
+
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.service-card{
+    background: var(--secondary);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.4s linear;
+    border: 2px solid transparent;
+}
+
+.service-card:hover{
+    border-color: var(--green);
+    box-shadow:
+    0 0 6px var(--green),
+    0 0 15px var(--green),
+    0 0 20px var(--green);
+}
+
+.card-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.card-top .service-icon{
+    font-size: 2.2rem;
+    color: var(--white);
+}
+
+.card-top .arrow{
+    width: 50px;
+    height: 50px;
+    background: var(--white);
+    color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    transition: all 0.4s linear;
+}
+
+.service-card:hover .arrow{
+    background: var(--green);
+    transform: rotate(45deg);
+}
+
+.service-card h3{
+    color: var(--green);
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+}
+
+.service-card p{
+    /* color: rgba(255,255,255,.8); */
+    color: var(--dark-white);
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+/* Tablet */
+
+@media(max-width:991px){
+
+    .service-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .services h2{
+        font-size: 3rem;
+    }
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .service-list{
+        grid-template-columns: 1fr;
+    }
+
+    .services{
+        padding: 80px 5%;
+    }
+
+    .services h2{
+        font-size: 2.5rem;
+    }
+
+    .service-card h3{
+        font-size: 1.7rem;
+    }
+}
+@media(max-width: 744px){
+    .services{padding: 15px 5%;}
+}
+@media(max-width: 800px){
+   .services{min-height: 94vh;}
+}
+
+@media(max-width:412px){
+    .services{
+        padding: 0px 8% 80px;
+    }
+}
+@media(max-width: 375px){
+    .services{padding: 40px 8% 80px;}
+}
+@media(min-width: 393px){
+    .services{padding: 40px 8% 80px;}
+}
+@media(min-width: 1400px) , (max-width: 1280px) {
+    .services{ padding-top: 1px; min-height: 90vh;}
+}
