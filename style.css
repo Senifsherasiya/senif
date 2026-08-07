@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body,html{
+    background-color: var(--primary);
+    color: var(--white);
+    min-height: 100dvh;
+    overflow-x: hidden;
+    transition: all 03s ease;
+}
+body .no-scroll{
+    height: 100dvh;
+    overflow: hidden;
+}
+
+:root{
+    --primary: #030a16;
+    --secondary: #323946;
+    --disabled: #fff3;
+    --green: #7cf03d;
+    --white: #fff;
+    ----primary--primary: #ddd;
+    --black: #000;
+    --gray: gray;
+}
+
+.navbar{
+    width: 100%;
+    height: 90px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(3,10,22,0.75);
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid rgba(255,255,255,0.08);
+}
+
+/* Logo */
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img{
+    width: 70px;
+}
+
+.logo h2{
+    color: var(--white);
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-link{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+.nav-link:hover{
+    color: var(--green);
+}
+
+.nav-link.active{
+    color: var(--green);
+}
+
+.nav-link.active::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background: var(--green);
+}
+
+.menu-toggle{
+    width: 41px;
+    height: 19px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.menu-toggle span{
+    width: 100%;
+    height: 3px;
+    background: var(--white);
+    border-radius: 10px;
+    transition: all 0.8s;
+}
+
+.menu-toggle.active span:nth-child(1){
+    transform: rotate(45deg) translateY(11px);
+}
+
+.menu-toggle.active span:nth-child(2){
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3){
+    transform: rotate(-45deg) translateY(-11px);
+}
+
+.section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    /* font-size: 4rem; */
+    font-weight: bold;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 900px){
+
+    .navbar{
+        padding: 0 6%;
+    }
+
+    .menu-toggle{
+        display: flex;
+    }
+
+    .nav-menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: #030a16f3;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+        transition: all 1s ease;
+    }
+
+    .nav-menu.active{
+        right: 0;
+    }
+
+    .nav-link{
+        font-size: 1.6rem;
+    }
+
+    .section{
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+}
+
+
+/* Hide Default Cursor */
+body{
+    cursor: none;
+}
+
+/* Small Dot */
+.cursor-dot{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background: #7cf03d;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    box-shadow:
+        0 0 10px #7cf03d,
+        0 0 20px #7cf03d,
+        0 0 40px #7cf03d;
+}
+
+/* Glowing Circle */
+/* .cursor-circle{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    border: 2px solid rgba(124,240,61,.8);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99998;
+    transform: translate(-50%, -50%);
+    transition: width .25s,height .25s,border-color .25s;
+    backdrop-filter: blur(2px);
+    box-shadow:
+        0 0 15px rgba(124,240,61,.5),
+        inset 0 0 10px rgba(124,240,61,.2);
+}
+.cursor-circle::before{
+    content:"";
+    position:absolute;
+    inset:-8px;
+    border-radius:50%;
+    border:1px solid rgba(124,240,61,.25);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(.8);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(1.6);
+        opacity:0;
+    }
+
+} */
