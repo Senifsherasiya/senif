@@ -123,37 +123,37 @@ aboutTabs.forEach((tab) => {
                 {
                     id: 1,
                     name: "HTML",
-                    icon: "img/html.png"
+                    icon: "html.png"
                 },
                 {
                     id: 2,
                     name: "CSS",
-                    icon: "img/css.png"
+                    icon: "css.png"
                 },
                 {
                     id: 3,
                     name: "JavaScript",
-                    icon: "img/javascript.png"
+                    icon: "javascript.png"
                 },
                 {
                     id: 4,
                     name: "Jquery",
-                    icon: "img/jquery.png"
+                    icon: "jquery.png"
                 },
                 {
                     id: 5,
                     name: "Bootstrap",
-                    icon: "img/bootstrap.png"
+                    icon: "bootstrap.png"
                 },
                 {
                     id: 6,
                     name: "PHP",
-                    icon: "img/php.png"
+                    icon: "php.png"
                 },
                 {
                     id: 7,
                     name: "MySql",
-                    icon: "img/mysql.png"
+                    icon: "mysql.png"
                 }
             ];
 
