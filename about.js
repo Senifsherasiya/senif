@@ -123,7 +123,7 @@ aboutTabs.forEach((tab) => {
                 {
                     id: 1,
                     name: "HTML",
-                    icon: "img/html.png"
+                    icon: "html.png"
                 },
                 {
                     id: 2,
