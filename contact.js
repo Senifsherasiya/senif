@@ -91,11 +91,12 @@ if (media) media.innerHTML = contactContent;
 //             },
 //         }).showToast();
 
-//         return alert("All Fields Are Mandatory !");
+//          return alert("All Fields Are Mandatory !");
 //     }
 
 //     emailjs.send("service_urr5b4s", "template_impm8cd", { name, email, phone, message, }).then(() => {
-//             alert("Message Sent !")
+//         document.getElementById("contact-form").reset();
+//          alert("Message Sent !")
 //             Toastify({
 //             text: "Message Sent !",
 //             duration: 3000,
@@ -132,7 +133,8 @@ if (media) media.innerHTML = contactContent;
 // });
 
 
-//*********** New Code *********
+
+//==== new code ====
 
 
 const sendBtn = document.querySelector("#send-msg");
@@ -267,12 +269,16 @@ contactForm.addEventListener("submit", function (event) {
             },
         }).showToast();
 
+
         sendBtn.innerHTML = originalText;
 
         Object.assign(
             sendBtn.style,
             originalStyle
         );
+
         sendBtn.disabled = false;
+
     });
+
 });
