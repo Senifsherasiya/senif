@@ -267,16 +267,12 @@ contactForm.addEventListener("submit", function (event) {
             },
         }).showToast();
 
-
         sendBtn.innerHTML = originalText;
 
         Object.assign(
             sendBtn.style,
             originalStyle
         );
-
         sendBtn.disabled = false;
-
     });
-
 });
