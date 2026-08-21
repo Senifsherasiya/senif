@@ -10,11 +10,11 @@ const services = [
     title:"Web Development",
     desc:"I develop fast, secure, and responsive websites using modern web technologies. Every website is built with clean code, optimized performance, SEO-friendly structure, and seamless functionality to deliver an excellent user experience across all devices."
 },
-{
-    icon:"fa-solid fa-mobile-screen",
-    title:"App Development",
-    desc:"I develop modern, high-performance, and user-friendly mobile applications tailored to your business needs. My focus is on creating responsive, secure, and scalable apps with intuitive interfaces that deliver seamless user experiences across Android and iOS platforms."
-},
+// {
+//     icon:"fa-solid fa-mobile-screen",
+//     title:"App Development",
+//     desc:"I develop modern, high-performance, and user-friendly mobile applications tailored to your business needs. My focus is on creating responsive, secure, and scalable apps with intuitive interfaces that deliver seamless user experiences across Android and iOS platforms."
+// },
 {
     icon:"fa-solid fa-arrow-trend-up",
     title:"SEO Optimization",
